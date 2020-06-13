@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myconstraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/myGridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageLion1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/lion" />
+
+
+        <ImageView
+            android:id="@+id/imageLion2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/lion" />
+
+
+        <ImageView
+            android:id="@+id/imageLion3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/lion" />
+
+        <ImageView
+            android:id="@+id/imageLion4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/lion" />
+
+
+        <ImageView
+            android:id="@+id/imageLion5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/lion" />
+
+        <ImageView
+            android:id="@+id/imageLion6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="5"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/lion" />
+
+
+        <ImageView
+            android:id="@+id/imageLion7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/lion" />
+
+        <ImageView
+            android:id="@+id/imageLion8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="7"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/lion" />
+
+        <ImageView
+            android:id="@+id/imageLion9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0"
+            android:background="@android:color/black"
+            android:onClick="imageviewisTapped"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/lion" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lion or Tiger?"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/myGridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:text="Reset The Game"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myGridLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
